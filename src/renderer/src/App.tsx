@@ -2,6 +2,8 @@ import Versions from './components/Versions'
 import icons from './assets/icons.svg'
 
 function App(): JSX.Element {
+  //const sum = window.api.sum(2, 10)
+
   return (
     <div className="container">
       <Versions></Versions>
@@ -10,7 +12,8 @@ function App(): JSX.Element {
         <use xlinkHref={`${icons}#electron`} />
       </svg>
       <h2 className="hero-text">
-        You{"'"}ve successfully created an Electron project with React and TypeScript
+        You{"'"}ve successfully created an Electron project with React and TypeScript Test:
+        {window.api.sum(4, 9)}
       </h2>
       <p className="hero-tagline">
         Please try pressing <code>F12</code> to open the devTool
